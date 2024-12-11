@@ -165,7 +165,7 @@ http://ip-server dari VM
 ### Output :
 ![Screenshot Tampilan](assets/nginxsuc.png)
 
-### Part Tantangan :
+🎨 Part Tantangan: Kustomisasi Welcome Page Nginx
 #### Kita akan mengedit halaman Welcome Page dari Nginx.
 
  ```bash
