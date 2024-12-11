@@ -67,7 +67,7 @@ ip addr
 
 ```
 ### Output :
-![Screenshot Tampilan](assets/ip.png)
+![Screenshot Tampilan](assets/IP.png)
 - Catat IP address yang terhubung ke jaringan lokal (biasanya pada bagian interface eth0 atau `enp0s3` perhatikan di bagian `inet`).
 ##### 
 
