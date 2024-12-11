@@ -6,11 +6,11 @@ Panduan Dasar cara membuat Virtual Machine (VM) menggunakan VirtualBox, menginst
 ---
 
 ## 📜 **Daftar Isi**
-1. [Download & Instal VirtualBox](#download--instal-virtualbox)
-2. [Download File ISO Ubuntu Server](#download-file-iso-ubuntu-server)
-3. [Membuat Virtual Machine di VirtualBox (VM)](#langkah-1-membuat-virtual-machine-vm)
-4. [Instalasi dan Konfigurasi Nginx Web Server](#langkah-2-instalasi-dan-konfigurasi-nginx-web-server)
-5. [Konfigurasi Firewall](#langkah-3-konfigurasi-firewall)
+1. Download & Instal VirtualBox
+2. Download File ISO Ubuntu Server]
+3. Membuat Virtual Machine di VirtualBox
+4. Instalasi dan Konfigurasi Nginx Web Server
+5. Konfigurasi Firewall
 
 ---
 
