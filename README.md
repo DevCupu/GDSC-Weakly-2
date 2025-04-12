@@ -6,11 +6,11 @@ Panduan Dasar cara membuat Virtual Machine (VM) menggunakan VirtualBox, menginst
 ---
 
 ## 📜 **Daftar Isi**
-1. [Download & Instal VirtualBox](#download--instal-virtualbox)
-2. [Download File ISO Ubuntu Server](#download-file-iso-ubuntu-server)
-3. [Membuat Virtual Machine di VirtualBox (VM)](#langkah-1-membuat-virtual-machine-vm)
-4. [Instalasi dan Konfigurasi Nginx Web Server](#langkah-2-instalasi-dan-konfigurasi-nginx-web-server)
-5. [Konfigurasi Firewall](#langkah-3-konfigurasi-firewall)
+1. Download & Instal VirtualBox
+2. Download File ISO Ubuntu Server]
+3. Membuat Virtual Machine di VirtualBox
+4. Instalasi dan Konfigurasi Nginx Web Server
+5. Konfigurasi Firewall
 
 ---
 
@@ -67,7 +67,7 @@ ip addr
 
 ```
 ### Output :
-![Screenshot Tampilan](assets/ip.png)
+![Screenshot Tampilan](assets/IP.png)
 - Catat IP address yang terhubung ke jaringan lokal (biasanya pada bagian interface eth0 atau `enp0s3` perhatikan di bagian `inet`).
 ##### 
 
@@ -165,7 +165,7 @@ http://ip-server dari VM
 ### Output :
 ![Screenshot Tampilan](assets/nginxsuc.png)
 
-## Part Tantangan :
+### Part Tantangan :
 #### Kita akan mengedit halaman Welcome Page dari Nginx.
 
  ```bash
@@ -183,29 +183,3 @@ Buka browser kembali dan akses alamat server
 http://server_ip_or_domain
 
 ```
-------
-## Part Opsional :
-#### 1. Pastikan Git sudah terinstal
-```bash
-sudo apt install git -y
-```
-#### 2. Clone repository GitHub 
-```bash
-git clone https://github.com/DevCupu/funny_web_gdsc.git
-```
-Repo akan otomatis ter-clone ke direktori saat ini (biasanya di /home/username/).
-
-#### 3. Pindahkan isi project ke direktori Nginx Kalau repo kamu berisi file HTML atau halaman web statis, kamu bisa arahkan ke root direktori Nginx.
-```bash
-sudo cp -r nama-repo/* /var/www/html/
-```
-Lalu restart Nginx:
-```bash 
-sudo systemctl restart nginx
-```
-
-#### 5. Akses menggunakan IP VM
-```bash
-http://<your-vm-ip>/
-```
-
