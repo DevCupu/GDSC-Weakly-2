@@ -120,7 +120,7 @@ sudo systemctl enable nginx
 sudo ufw app list
 ```
 ```bash
-# Outputnya akan terlehat seperti ini!
+# Outputnya akan terlihat seperti ini!
 Available applications:
   Nginx Full
   Nginx HTTP
@@ -165,7 +165,7 @@ http://ip-server dari VM
 ### Output :
 ![Screenshot Tampilan](assets/nginxsuc.png)
 
-### Part Tantangan :
+## Part Tantangan :
 #### Kita akan mengedit halaman Welcome Page dari Nginx.
 
  ```bash
@@ -183,3 +183,29 @@ Buka browser kembali dan akses alamat server
 http://server_ip_or_domain
 
 ```
+------
+## Part Opsional :
+#### 1. Pastikan Git sudah terinstal
+```bash
+sudo apt install git -y
+```
+#### 2. Clone repository GitHub 
+```bash
+git clone https://github.com/DevCupu/funny_web_gdsc.git
+```
+Repo akan otomatis ter-clone ke direktori saat ini (biasanya di /home/username/).
+
+#### 3. Pindahkan isi project ke direktori Nginx Kalau repo kamu berisi file HTML atau halaman web statis, kamu bisa arahkan ke root direktori Nginx.
+```bash
+sudo cp -r nama-repo/* /var/www/html/
+```
+Lalu restart Nginx:
+```bash 
+sudo systemctl restart nginx
+```
+
+#### 5. Akses menggunakan IP VM
+```bash
+http://<your-vm-ip>/
+```
+
